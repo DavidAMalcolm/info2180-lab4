@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superheroes</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1> Avengers Character Search</h1>
-    <input type="text" id="superNames">
-    <button id="searchButton">Search</button>
-    <div id="result"></div>
+    
+    <div id="overBox">
+        <p>Search by Full Name or Alias</p>
+        <div id="searchbox">
+            <input type="text" id="superNames" placeholder="e.g Tony Stark or Iron Man">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    
 </body>
 </html>

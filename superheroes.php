@@ -81,15 +81,21 @@ if (!empty($heroName)){
         }
     }
     if ($foundHero){
+        echo "<h2> RESULT </h2>";
+        echo "<hr>";
         echo "<h3>{$foundHero['alias']}</h3>";
         echo "<h4>{$foundHero['name']}</h4>";
         echo "<p>{$foundHero['biography']}</p>";
     }
     else{
-        echo "<p>Result not found</p>";
+        echo "<h2> RESULT </h2>";
+        echo "<hr>";
+        echo "<p class='unfound'>Superhero not found</p>";
     }
 }
 else{
+    echo "<h2> RESULT </h2>";
+    echo "<hr>";
     echo "<ul>";
     foreach ($superheroes as $superhero){
         echo "<li>{$superhero['alias']}</li>";
